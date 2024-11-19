@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maureen Estrada Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ppstyle.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Maureen Estrada</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-uppercase">
+                <li class="nav-item"><a class="nav-link" href="#home">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="header text-center d-flex align-items-center">
+    <div class="container">
+        <h1 class="text-light">Maureen Estrada</h1>
+        <p class="lead text-light">A 20-Year-Old Creative Tech Enthusiast</p>
+        <a href="#projects" class="btn btn-custom mt-4">Explore My Work</a>
+    </div>
+</header>
+
+<!-- About Me -->
+<section id="home" class="py-5 about">
+    <div class="container text-center">
+        <img src="images/pic.png" alt="Profile Picture" class="profile-pic mb-4">
+        <h2>About Me</h2>
+        <p>Hi, I’m Maureen Estrada, a 20-year-old BSIS student at the Technological University of the Philippines. I’m also a content creator on Tiktok (@noturpotatocrush) with 2 years of experience. I’ve been navigating the world of technology and creativity with passion and persistence. Even though my course isn’t directly aligned with my creative interests, I’m embracing every challenge and opportunity!</p>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">My Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/stud.png" class="card-img-top project-img" alt="Poker Game">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Poker Game</h5>
+                        <p class="card-text">A Poker game built with C. It taught me the basics of game development!</p>
+                        <a href="https://github.com/mauiestraduuuh/PokerGame" target="_blank" class="btn btn-custom">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/mine.png" class="card-img-top project-img" alt="Minesweeper">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Minesweeper</h5>
+                        <p class="card-text">A Minesweeper game in C++, designed with logical thinking and random mine placement.</p>
+                        <a href="https://github.com/mauiestraduuuh/Minesweeper/tree/main" target="_blank" class="btn btn-custom">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="images/type.png" class="card-img-top project-img" alt="Typing Tutor">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Typing Tutor</h5>
+                        <p class="card-text">A project to help slow typers improve their typing speed. Built with C!</p>
+                        <a href="https://github.com/mauiestraduuuh/TypingTutor/tree/main" target="_blank" class="btn btn-custom">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5">
+    <div class="container text-center">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+            <li><span class="badge bg-success">HTML</span></li>
+            <li><span class="badge bg-success">CSS</span></li>
+            <li><span class="badge bg-success">C</span></li>
+            <li><span class="badge bg-success">C++</span></li>
+            <li><span class="badge bg-success">JavaScript</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-3 bg-dark text-light">
+    <p>&copy; 2024 Maureen Estrada</p>
+    <p><a href="https://github.com/mauiestraduuuh" target="_blank" class="text-success"><i class="fab fa-github"></i> GitHub Profile</a></p>
+</footer>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scroll Animations -->
+<script>
+    // Scroll animation
+    window.addEventListener("scroll", function() {
+        const sections = document.querySelectorAll("section");
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight) {
+                section.classList.add("fade-in");
+            }
+        });
+    });
+</script>
+</body>
+</html>

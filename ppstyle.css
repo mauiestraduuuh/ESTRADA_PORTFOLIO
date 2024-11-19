@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: beige;
+    margin-top: 56px;
+}
+
+.header {
+    background: linear-gradient(135deg, green, black);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.navbar {
+    background-color: black !important;
+    transition: background-color 0.3s;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: beige !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: green !important;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: green;
+    color: beige;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: black;
+    color: green;
+}
+
+.contact {
+    background: black;
+    color: beige;
+}
+
+footer {
+    background: black;
+    color: beige;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: green;
+    color: beige;
+}
+
+.modal-body {
+    background-color: #f1f1f1;
+}
+
+/* Scroll Animations */
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+section.fade-in {
+    opacity: 1;
+}
+
+.project-img {
+    transition: transform 0.3s;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+}
